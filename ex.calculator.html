@@ -11,89 +11,124 @@
 <div class="container">
     <table>
         <tr>
-            <td class="DisplayResult" colspan="7"><span></span></td>
+            <td class="DisplayResult" colspan="7">
+                <input type="text" id="result" readonly>
+            </td>
         </tr>
         <tr>
             <td>
-                <button>Rad</button>
+                <button onclick="addToResult('Rad')">Rad</button>
             </td>
             <td>
-                <button>Deg</button>
+                <button onclick="addToResult('Deg')">Deg</button>
             </td>
             <td>
-                <button>x!</button></td>
+                <button onclick="addToResult('x!')">x!</button>
+            </td>
             <td>
-                <button>(</button></td>
+                <button onclick="addToResult('(')">(</button>
+            </td>
             <td>
-                <button>)</button></td>
+                <button onclick="addToResult(')')">)</button>
+            </td>
             <td>
-                <button>%</button></td>
+                <button onclick="addToResult('%')">%</button>
+            </td>
             <td>
-                <button onclick="AC()">AC</button></td>
+                <button onclick="clearResult ()">AC</button>
+            </td>
         </tr>
         <tr>
             <td>
-                <button>Inv</button></td>
+                <button onclick="addToResult('Inv')">Inv</button>
+            </td>
             <td>
-                <button>sin</button></td>
+                <button onclick="addToResult('sin')">sin</button>
+            </td>
             <td>
-                <button>ln</button></td>
+                <button onclick="addToResult('ln')">ln</button>
+            </td>
             <td>
-                <button class="number">7</button></td>
+                <button class="number" onclick="addToResult('7')">7</button>
+            </td>
             <td>
-                <button class="number">8</button></td>
+                <button class="number" onclick="addToResult('8')">8</button>
+            </td>
             <td>
-                <button class="number">9</button></td>
+                <button class="number" onclick="addToResult('9')">9</button>
+            </td>
             <td>
-                <button>÷</button></td>
+                <button onclick="addToResult('/')">÷</button>
+            </td>
         </tr>
         <tr>
             <td>
-                <button>π</button></td>
+                <button onclick="addToResult('π')">π</button>
+            </td>
             <td>
-                <button>cos</button></td>
+                <button onclick="addToResult('cos')">cos</button>
+            </td>
             <td>
-                <button>log</button></td>
+                <button onclick="addToResult('log')">log</button>
+            </td>
             <td>
-                <button class="number">4</button></td>
+                <button class="number" onclick="addToResult('4')">4</button>
+            </td>
             <td>
-                <button class="number">5</button></td>
+                <button class="number" onclick="addToResult('5')">5</button>
+            </td>
             <td>
-                <button class="number">6</button></td>
+                <button class="number" onclick="addToResult('6')">6</button>
+            </td>
             <td>
-                <button>x</button></td>
+                <button onclick="addToResult('*')">x</button>
+            </td>
         </tr>
         <tr>
             <td>
-                <button>e</button></td>
+                <button onclick="addToResult('e')">e</button>
+            </td>
             <td>
-                <button>tan</button></td>
+                <button onclick="addToResult('tan')">tan</button>
+            </td>
             <td>
-                <button>√</button></td>
+                <button onclick="addToResult('√')">√</button>
+            </td>
             <td>
-                <button class="number">1</button></td>
+                <button class="number" onclick="addToResult('1')">1</button>
+            </td>
             <td>
-                <button class="number">2</button></td>
+                <button class="number" onclick="addToResult('2')">2</button>
+            </td>
             <td>
-                <button class="number">3</button></td>
+                <button class="number" onclick="addToResult('3')">3</button>
+            </td>
             <td>
-                <button>-</button></td>
+                <button onclick="addToResult('-')">-</button>
+            </td>
         </tr>
         <tr>
             <td>
-                <button>Ans</button></td>
+                <button onclick="addToResult('Ans')">Ans</button>
+            </td>
             <td>
-                <button>EXP</button></td>
+                <button onclick="addToResult('EXP')">EXP</button>
+            </td>
             <td>
-                <button>x<sup>y</sup></button></td>
+                <button onclick="addToResult('^')">x<sup>y</sup></button>
+            </td>
             <td>
-                <button class="number">0</button></td>
+                <button class="number" onclick="addToResult('0')">0</button>
+            </td>
             <td>
-                <button class="number">.</button></td>
+                <button class="number" onclick="addToResult('.')">.</button>
+            </td>
             <td>
-                <button class="number">=</button></td>
+                <button class="number" onclick="calculateResult()">=</button>
+            </td>
             <td>
-                <button>+</button></td>
+                <button onclick="addToResult('+')">+</button>
+            </td>
         </tr>
     </table>
 </div>
